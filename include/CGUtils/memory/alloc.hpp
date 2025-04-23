@@ -37,7 +37,7 @@ inline void *aligned_alloc(size_t byte_size, size_t align)
 
 #else
 
-	void *ret = std::aligned_alloc(align, byte_size);
+	void *ret = _aligned_malloc(align, byte_size);
 
 #endif
 

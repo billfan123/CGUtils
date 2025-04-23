@@ -33,7 +33,7 @@ std::string read_txt_file(const std::string& filename){
 }
 
 void write_raw_file_bytes(const std::string& filename,const void* data,size_t bytes_count){
-	std::ofstream out(filename,std::ios::binary|std::ios::beg);
+	std::ofstream out(filename, std::ios::binary);
 	if(!out.is_open()){
 		//todo replace with file open exception
 		throw std::runtime_error("write file failed: " + filename);

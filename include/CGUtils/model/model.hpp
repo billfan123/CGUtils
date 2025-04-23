@@ -4,6 +4,7 @@
 #pragma once
 #include "../math.hpp"
 #include "../texture.hpp"
+#include <memory>
 namespace wzz::model{
 
     struct vertex_t{

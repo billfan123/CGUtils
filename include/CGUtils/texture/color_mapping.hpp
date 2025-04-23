@@ -27,8 +27,8 @@ public:
 	void add_point(const T& color){
 		add_point(color.first,color.second);
 	}
-	template <typename T,typename... Args>
-	void add_point(const T& color,Args... colors){
+	template <typename U, typename... Args>
+	void add_point(const U& color, Args... colors){
 		add_point(color.first,color.second);
 		add_point<Args...>(colors...);
 	}

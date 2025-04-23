@@ -2,6 +2,7 @@
 #include "ringbuffer.hpp"
 #include <memory>
 #include <mutex>
+#include <condition_variable>
 namespace wzz::misc{
 
 struct message_queue_payload_deleter_t{
